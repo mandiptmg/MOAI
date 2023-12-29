@@ -9,9 +9,9 @@ import Footer from "./component/header and footer/Footer"
 import {useEffect} from 'react'
 
 useEffect(()=>{
-  const {pathName} = useLocation;
+  const {pathname} = useLocation();
   window.scrollTo(0,0);
-},[pathName])
+},[pathname])
 const App = () => {
   return (
     <div className='overflow-x-hidden'>
