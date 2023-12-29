@@ -10,7 +10,7 @@ import {useEffect} from 'react'
 
 useEffect(()=>{
   const {pathName} = useLocation;
-  window.scroll(0,0);
+  window.scrollTo(0,0);
 },[pathName])
 const App = () => {
   return (
