@@ -8,11 +8,12 @@ import Header from "./component/header and footer/Header"
 import Footer from "./component/header and footer/Footer"
 import {useEffect} from 'react'
 
+const App = () => {
+   const {pathname} = useLocation();
 useEffect(()=>{
-  const {pathname} = useLocation();
+ 
   window.scrollTo(0,0);
 },[pathname])
-const App = () => {
   return (
     <div className='overflow-x-hidden'>
       <div className='mx-auto w-[75vw] max-w-7xl'>
