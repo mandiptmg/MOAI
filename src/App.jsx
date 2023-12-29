@@ -1,4 +1,4 @@
-import { Routes,Route } from "react-router-dom"
+import { Routes,Route,useLocation } from "react-router-dom"
 import Home from "./component/Home"
 import Service from "./component/Service"
 import About from "./component/About"
@@ -6,8 +6,12 @@ import Career from "./component/Career"
 import Contact from "./component/Contact"
 import Header from "./component/header and footer/Header"
 import Footer from "./component/header and footer/Footer"
+import {useEffect} from 'react'
 
-
+useEffect(()=>{
+  const {pathName} = useLocation;
+  window.scroll(0,0);
+},[pathName])
 const App = () => {
   return (
     <div className='overflow-x-hidden'>
